@@ -1,0 +1,171 @@
+//1. https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+class Movie {
+    constructor(title,studio,rating){
+this.title = title;
+this.studio = studio;
+this.rating = rating;
+this.getPG();
+if (rating === undefined)
+{
+    this.title = title;
+    this.studio = studio;
+    this.rating = 'PG';
+}
+getPG(array)
+{
+    if (rating === undefined)
+{
+    this.title = title;
+    this.studio = studio;
+    this.rating = 'PG';
+}
+    return array;
+}
+}
+}
+let film = new Movie('Doctor strange','MARVEL','PG13');
+let film1 = new Movie('Aqua Man', 'DC')
+let given = new Movie('Casino Royale','Eon Productions','PG13');
+console.log(film);
+console.log(film1);
+console.log(given);
+console.log(getPG(['Casino Royale','Eon Productions','PG13']));
+
+//2. https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+class Circle{
+    constructor(radius,color)
+    {
+this.radius = radius;
+this.color = color;
+    }
+    setRadius(radius){
+        this.radius = radius;
+     }
+ 
+     getRadius(){
+         return parseFloat(this.radius);
+     }
+ 
+     setColor(color){
+         this.color = color;
+     }
+ 
+     getColor(color){
+         return this.color;
+     }
+ 
+     toString(){    
+         return `${this.radius} ${this.color}`;
+     }
+ 
+     getArea(){
+         return parseFloat(Math.PI * this.radius * this.radius);
+     }
+ 
+     getCircumference (){
+         return parseFloat( (2 * Math.PI) * this.radius);
+     }
+ }
+ var one = new Circle();
+console.log(one);
+ let objInst = new Circle(10.3,"RED");
+ console.log("toString: "+objInst.toString());
+ objInst.setRadius(25.3);
+ console.log("getRadius: "+objInst.getRadius().toFixed(2));
+ objInst.setColor("WHITE");
+ console.log("getColor: "+objInst.getColor());
+ console.log("getArea: "+objInst.getArea().toFixed(2));
+ console.log("getColor: "+objInst.getCircumference().toFixed(2));
+ console.log("toString: "+objInst.toString());
+
+//3. Write a “person” class to hold all the details
+
+
+class Person{
+    constructor(name,age,address,occupation){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.occupation = occupation;
+    }
+
+    setName(name){
+        this.name = name;
+    }
+
+    getName(){
+        return this.name;
+    }
+
+    setAge(age){
+        this.age = age;
+    }
+    
+    getAge(){
+        return this.age;
+    }
+
+    setAddress(address){
+        this.address = address;
+    }
+
+    getAddress(){
+        return this.address;
+    }
+
+    setoccupation(occupation){
+        this.occupation = occupation;
+    }
+    
+    getOccupation(){
+        return this.occupation;
+    }
+
+    toString(){
+        let personData = `Name: ${this.getName()}\nAge: ${this.getAge()}\nAddress: ${this.getAddress()}\nOccupation: ${this.getOccupation()}`
+        return personData;
+    }
+}
+
+let personObj = new Person("John",24,"14,Casino Street","Software Developer");
+console.log(personObj.toString());
+
+
+//4. write a class to calculate uber price.
+
+const baseFare = 50;
+const costPerMin = 5;
+const costPerMile = 5;
+const bookFee = 12;
+const surgeBoost = 3;
+class UberPrice{
+   constructor(rideDistance,rideTime){        
+        this.rideDistance = rideDistance;
+        this.rideTime = rideTime;
+   }
+
+   setRideDistance(rideDistance){
+    this.rideDistance = rideDistance;
+   }
+
+   getRideDistance(){
+    return this.rideDistance;
+   }
+
+   setRideTime(rideTime){
+    this.rideTime = rideTime;
+   }
+
+   getRideTime(){
+       return rideTime;
+   }
+
+   getPrice(){
+        let result = baseFare+( (costPerMin * this.rideTime)+(costPerMile * this.rideDistance) * surgeBoost) + bookFee;
+        return result;
+   }
+}
+
+let priceObj = new UberPrice(10,30);
+console.log(priceObj.getPrice());
