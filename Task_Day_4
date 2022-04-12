@@ -1,0 +1,50 @@
+// 1. How to compare two JSON have the same properties without order?
+a. var obj1 = { name: "Person 1", age:5 };
+b. var obj2 = { age:5, name: "Person 1" };
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+
+var compare = (first , second) => {
+    var key1 = Object.keys(first);
+    var key2 = Object.keys(second);
+    var flag = false;
+
+    if(key1.length == key2.length)
+    {
+        for(keys in first)
+        {
+            if(first[key1] == second[key2])
+            {
+                flag = true;
+            }
+            return flag;
+        }
+    }
+}
+console.log(compare(obj1,obj2));
+
+// 2.Use the rest countries API url -> https://restcountries.eu/rest/v2/all and display all the country flags in console
+
+var request = new XMLHttpRequest();
+request.open("GET","https://restcountries.com/v3.1/all", true);
+request.send();
+request.onload = function(){
+var data = JSON.parse(request.response);
+console.log(data);
+for(let i=0;i<data.length;i++)
+{
+    console.log(data[i].flag);
+}
+}
+
+// 3. Use the same rest countries and print all countries name, region, sub region and population
+
+var details = new XMLHttpRequest;
+details.open(`GET`,'https://restcountries.eu/rest/v2/all');
+details.onload = function(){
+    var print = JSON.parse(this.response);
+    console.log(print);
+    for(let i=0; i<print.length; i++){
+        console.log(" name ",print[i].name["common"] ," region ", print[i].region ,"subregion" , print[i].subregion , "population" ,print[i].population);
+    }
+}
