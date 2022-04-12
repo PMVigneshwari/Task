@@ -1,0 +1,93 @@
+//3.1) For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+var jsonArray = '[1,2,3,4,5,6,7,8,9]';
+//for loop
+for(var i = 0 ; i < jsonArray.length ; i++)
+{
+    console.log(i);
+}
+//for in loop
+for(var j in jsonArray)
+{
+    console.log(j);
+}
+//for of loop
+for (var k of jsonArray)
+{
+    console.log(k);
+}
+//array.forEach(function(currentValue, index, arr), thisValue)
+function display()
+{
+    console.log(jsonArray);
+}
+jsonArray.forEach(display());
+//JSON object
+var obj = {
+    "name":"XXX",
+    "age":20,
+    "address":"Chennai"
+}
+for (const[key,value] of Object.entries(obj)){
+    console.log(`Key: ${key} & value: ${value}`)
+}
+
+
+//3.2) Create your own resume data in JSON format
+
+
+{
+    "basics": {
+      "name": "CCCCCCCCCCCCC",
+      "degree": "Engineering",
+      "summary": "A good programmer wants to grow along with the organization ",
+      "location": {
+        "countryCode": "India",
+        "region": "Tamil Nadu"
+      },
+      "profiles": [
+        {
+          "network": "Linked in profile",
+          "username": "CCCCCCCCCCCCC"
+        }
+      ]
+    },
+    "work": [
+      {
+        "company": "XXX",
+        "position": "Engineer",
+        "summary": "worked as Emgineer in Quality department ",
+        "highlights": [
+            "Effective worker", "Progressive worker", "Good team player"
+        ]
+      }
+    ],
+    
+    "education": [
+      {
+        "institution": "YYY",
+        "area": "chennai",
+        "studyType": "Regular",
+        "courses": [
+          "Java Script","C++"
+        ]
+      }
+    ],
+    
+    "skills": [
+      {
+        "name": "Programming language",
+        "level": "Mid level",
+        "keywords": [
+          "Java Script" , "C ++"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "Moderate fluency"
+      }
+    ],
+    
+  }
