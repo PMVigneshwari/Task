@@ -1,0 +1,49 @@
+body
+{
+    background-color: rgb(230, 220, 220);
+    color:rgb(199, 139, 139);
+    opacity: 50px;
+}
+.menu
+{
+display:flex;
+flex-wrap: wrap;
+flex-direction: row;
+width: 100%;
+}
+input
+{
+    margin:10px;
+    border:orangered;
+    border-radius: 20px;
+    padding:8px;
+}
+.pageDetails
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(233, 231, 227);
+}
+#signUp
+{
+    background-color: rgb(27, 27, 221) ;
+    color: white;
+    font-size: larger;
+}
+#signUp
+{
+    width:200px;
+    height:30px;
+    border-radius:10px;
+    border:none;
+    align-items:center;
+}
+#Button
+{
+    width:200px;
+    height:30px;
+    border-radius:10px;
+    border:none;
+    align-items:center;
+}

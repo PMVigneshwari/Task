@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey form</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/53ad30dfc1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container w-5">
+            <form action="submit" class="mt-2 border p-3">
+                <h5>Name*</h3>
+                    <div class="name row mb-3">
+                        <div class="firstName col-md-6">
+                            <input type="text" class="form-control mb-2" id="fName" required>
+                            <label for="fname" class="form-label">First</label>
+                        </div>
+                        <div class="lastName col-md-6">
+                            <input type="text" class="form-control mb-2" id="lName" required>
+                            <label for="lName" class="form-label">Last</label>
+                        </div>
+                    </div>
+                    <h5>Email*</h3>
+                        <div class="email row mb-3">
+                            <div class="email col">
+                                <input type="email" class="form-control mb-2" id="email" required>
+                            </div>
+                        </div>
+                        <h5>Your Experience*</h5>
+                        <div class="mb-3">
+                            <img class="star" src="./assets/icons8-star-96.png" alt="star image" width="25px">
+                            <img class="star" src="./assets/icons8-star-96.png" alt="star image" width="25px">
+                            <img class="star" src="./assets/icons8-star-96.png" alt="star image" width="25px">
+                            <img class="star" src="./assets/icons8-star-96.png" alt="star image" width="25px">
+                            <img class="star" src="./assets/icons8-star-96.png" alt="star image" width="25px">
+                        </div>
+                        <h5>How satisfied are you with*</h5>
+                        <div class="container mb-3">
+                            <div class="row fw-bold">
+                                <div class="col-3 p-1"></div>
+                                <div class="col align-center p-1">Very Unsatisfied</div>
+                                <div class="col align-center p-1">Unsatisfied</div>
+                                <div class="col align-center p-1">Neutral</div>
+                                <div class="col align-center p-1">Satisfied</div>
+                                <div class="col align-center p-1">Very Satisfied</div>
+                            </div>
+                            <div class="row bg-grey">
+                                <div class="col-3 p-1">Purchase</div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 p-1">Service</div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                            </div>
+                            <div class="row bg-grey">
+                                <div class="col-3 p-1">Company Overall</div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                            </div>
+                        </div>
+                        <h5>How likely are you to*</h5>
+                        <div class="container mb-3">
+                            <div class="row fw-bold">
+                                <div class="col-3 p-1"></div>
+                                <div class="col align-center p-1">Very Unlikely</div>
+                                <div class="col align-center p-1">Unlikely</div>
+                                <div class="col align-center p-1">Neutral</div>
+                                <div class="col align-center p-1">Likely</div>
+                                <div class="col align-center p-1">Very Likely</div>
+                            </div>
+                            <div class="row bg-grey">
+                                <div class="col-3 p-1">Buy from us again</div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 p-1">Recommend our product to others</div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                            </div>
+                            <div class="row bg-grey">
+                                <div class="col-3 p-1">Recommend our company to others</div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                                <div class="col align-center p-1"><input type="radio"></div>
+                            </div>
+                        </div>
+                        <h5>Additional comments or suggestions</h5>
+                        <textarea class="col mb-3" id="comments" rows="5"></textarea>
+                        <button class="border-0 p-3">Submit</button>
+            </form>
+        </div>
+    </body>
+
+</html>
