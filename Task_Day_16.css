@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.container{
+    width: 20%;
+    background-color: #cdd5d6;
+    border-radius: 5px;
+    box-sizing: content-box;
+    padding: 16px;
+}
+
+.output{
+    margin-top: 16px;
+    background-color: #3f2828;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    text-align: right;
+    box-shadow: 0 3px 3px 0px rgb(255, 238, 238);
+
+}
+
+#history{
+    margin: 10px auto;
+    height: 16px;
+    font-size: 16px;
+    color: #ffff;
+}
+
+#result{
+    margin: 10px auto;
+    height: 30px;
+    font-size: 30px;
+    color: #ffff;
+}
+
+#buttonDel{
+    font-size: 30px;
+}
+
+button{
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #cdd5d6;
+    border-radius: 10px;
+    /* box-shadow: 0 3px 3px 0px rgb(61, 45, 45); */
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(145, 145, 145);
+}
+
+input:focus{
+    outline: none;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+}
